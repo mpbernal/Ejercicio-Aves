@@ -3,20 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.ave;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
  *
  * @author wsant
  */
-public class Gallina extends Ave {
-
-  public static final Logger logger = LoggerFactory.getLogger(Gallina.class);
+public class Grasnido implements TipoSonido{
     
-    public Gallina(){
-        logger.debug("instanciando uan gallina");
-        tipoSonido = new Grasnido();
-        tipoVuelo = new VueloConAlas();
+    public static final Logger logger = LoggerFactory.getLogger(Grasnido.class);
+    
+    public void makeSound(){
+        logger.debug("grasnando");
+        System.out.println("grasnando");
     }
+    
+    
 }

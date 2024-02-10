@@ -6,17 +6,17 @@ package com.mycompany.ave;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 /**
  *
  * @author wsant
  */
-public class Gallina extends Ave {
-
-  public static final Logger logger = LoggerFactory.getLogger(Gallina.class);
+public class SinVuelo implements TipoVuelo {
     
-    public Gallina(){
-        logger.debug("instanciando uan gallina");
-        tipoSonido = new Grasnido();
-        tipoVuelo = new VueloConAlas();
+    public static final Logger logger = LoggerFactory.getLogger(SinVuelo.class);
+    
+    public void vuelo(){
+        logger.debug("no puedo volar");
+        System.out.println("no puedo volar");
     }
 }

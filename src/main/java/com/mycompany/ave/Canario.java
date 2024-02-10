@@ -4,19 +4,20 @@
  */
 package com.mycompany.ave;
 
-import com.mycompany.ave.Volar;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  *
  * @author wsant
  */
-public class Canario extends Ave implements Volar {
+public class Canario extends Ave {
 
-    @Override
-    public void makeSound() {
-     System.out.println("Canta");
-    }
-    public void vuela() {
-     System.out.println("vuela con alas");
-    }
+    public static final Logger logger = LoggerFactory.getLogger(Canario.class);
     
+    public Canario(){
+        logger.debug("instanciando un canario");
+        tipoSonido = new Canto();
+        tipoVuelo = new VueloConAlas();
+    }
 }
