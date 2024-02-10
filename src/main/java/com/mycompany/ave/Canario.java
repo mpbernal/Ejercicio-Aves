@@ -4,11 +4,12 @@
  */
 package com.mycompany.ave;
 
+import com.mycompany.ave.Volar;
 /**
  *
  * @author wsant
  */
-public class Canario extends Ave {
+public class Canario extends Ave implements Volar {
 
     @Override
     public void makeSound() {

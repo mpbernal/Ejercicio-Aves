@@ -3,12 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.ave;
-
+import com.mycompany.ave.Volar;
 /**
  *
  * @author wsant
  */
-public class Gallina extends Ave {
+public class Gallina extends Ave implements Volar{
 
     @Override
     public void makeSound() {
