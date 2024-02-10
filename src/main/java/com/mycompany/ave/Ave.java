@@ -11,6 +11,7 @@ package com.mycompany.ave;
 public abstract class Ave {
 
     public abstract void makeSound();
+    public abstract void vuela();
     
     
 }
