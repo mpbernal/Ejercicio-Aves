@@ -18,8 +18,9 @@ public class Avestruz extends Ave {
     
     public Avestruz(){
         logger.debug("instanciando aveztruz");
-        tipoSonido = new SinCanto();
-        tipoVuelo = new SinVuelo();
+        this.setTipoSonido(new SinCanto());
+        this.setTipoVuelo(new SinVuelo());
+        
     }
     
        

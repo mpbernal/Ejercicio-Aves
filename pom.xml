@@ -11,6 +11,12 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.36</version>
             <type>jar</type>
+        </dependency>    
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
     <properties>
@@ -18,5 +24,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.mycompany.ave.Ave</exec.mainClass>
+        
     </properties>
 </project>
